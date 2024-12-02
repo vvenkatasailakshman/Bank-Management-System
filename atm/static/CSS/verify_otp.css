@@ -1,0 +1,145 @@
+/* General styles for the body and container */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading style */
+h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Form label style */
+label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: #555;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Input field style */
+input[type="text"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(38, 143, 255, 0.5);
+}
+
+/* Button style */
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Messages container style */
+.messages {
+    margin-top: 1rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+.messages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.messages li {
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    color: #fff;
+    opacity: 0;
+    animation: fadeInMessage 0.5s ease-out forwards;
+}
+
+.messages li.success {
+    background: #28a745;
+}
+
+.messages li.error {
+    background: #dc3545;
+}
+
+.messages li.warning {
+    background: #ffc107;
+    color: #212529;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInMessage {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

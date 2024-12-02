@@ -1,0 +1,133 @@
+/* Basic reset and styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Container for form and logo */
+.container {
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+    transform: translateY(20px);
+    transition: transform 0.5s ease;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+/* Logo styling with animation */
+.logo {
+    display: block;
+    max-width: 150px;
+    margin: 0 auto 20px;
+    opacity: 0;
+    animation: logoFadeIn 1s 0.5s ease-in-out forwards;
+}
+
+/* Form styling */
+form {
+    margin: 0;
+}
+
+/* Input fields with animation */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: inputFadeIn 1s ease-in-out forwards;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Button styling with animation */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: buttonFadeIn 1s ease-in-out forwards;
+    box-sizing: border-box; /* Ensure padding is included in total width */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #003d7a;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes inputFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
