@@ -2,7 +2,7 @@
 # UI VIEW
 # Registration Form-
 ![Screenshot 2024-12-02 122517](https://github.com/user-attachments/assets/8d8520b4-53d1-49ce-83e8-c0c990c56d71)
-# Creation os Account Number-
+# Creation of Account Number-
 ![Screenshot 2024-12-02 123116](https://github.com/user-attachments/assets/b9525099-77ac-4388-adb2-ed5d46f09032)
 # Sign-in Page-
 ![Screenshot 2024-12-02 123332](https://github.com/user-attachments/assets/4a803616-fa38-4527-b0ba-918b7883d99c)
