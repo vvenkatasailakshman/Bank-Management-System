@@ -1,5 +1,5 @@
 # Bank-Management-System
-# UI VIEW
+# UI VIEW:-
 # Registration Form-
 ![Screenshot 2024-12-02 122517](https://github.com/user-attachments/assets/8d8520b4-53d1-49ce-83e8-c0c990c56d71)
 # Creation of Account Number-
@@ -21,5 +21,13 @@
 ![Screenshot 2024-12-02 125205](https://github.com/user-attachments/assets/7d6b2472-fa69-4692-9c17-4db28389a7dd)
 # Forgot PIN Page-
 ![Screenshot 2024-12-02 125345](https://github.com/user-attachments/assets/0c489908-05d9-4514-b913-82518ca63cd7)
+# OTP Send by Mail-
+![Screenshot_20241204_202159](https://github.com/user-attachments/assets/74612104-46c4-4a00-b5d0-1e873b2ab896)
+# Verify OTP Page-
+![Screenshot 2024-12-04 202337](https://github.com/user-attachments/assets/b2dc5696-93c2-4f98-bae1-12bbb1a60f81)
+# Reset New PIN Page-
+![Screenshot 2024-12-04 202412](https://github.com/user-attachments/assets/41f1680e-ccfb-4972-8dc7-2c15f7e8efd1)
+# Created New PIN Successfully-
+![Screenshot 2024-12-04 202439](https://github.com/user-attachments/assets/96b22296-954f-4c77-ae78-6fed0e5886be)
 # ThankYou for your time
 for collaboration: vvslakshman970@gmail.com
