@@ -1,0 +1,151 @@
+/* Basic CSS Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Soft background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Form Container Styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; /* Maximum width for form container */
+    padding: 20px;
+}
+
+/* Title Styling */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Content Section Styling */
+.content {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Form Label and Input Styling */
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #666;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"]:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Messages Section Styling */
+.messages {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.messages ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.messages li {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Message Types */
+.messages li.success {
+    background-color: #28a745; /* Green for success messages */
+}
+
+.messages li.error {
+    background-color: #dc3545; /* Red for error messages */
+}
+
+.messages li.info {
+    background-color: #17a2b8; /* Blue for informational messages */
+}
+
+.messages li.warning {
+    background-color: #ffc107; /* Yellow for warnings */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
